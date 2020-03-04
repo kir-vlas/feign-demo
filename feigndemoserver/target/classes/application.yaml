@@ -1,0 +1,17 @@
+server:
+  port: 7055
+
+spring:
+  application:
+    name: demo-server
+  cloud:
+    client:
+      hostname: localhost
+
+worker:
+  name: Peter
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8022/eureka/

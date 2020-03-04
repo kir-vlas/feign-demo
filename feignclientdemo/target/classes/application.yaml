@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: feign-demo-application
+  cloud:
+    client:
+      hostname: localhost
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8022/eureka/
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 600000
+        readTimeout: 600000
